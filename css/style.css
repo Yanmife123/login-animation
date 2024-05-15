@@ -13,23 +13,23 @@
 body {
   font-family: jua;
   font-size: 15px;
-  background-image: url(/animation1/img/pexels-riciardus-789380.jpg);
+  background-image: url(/animation1/img/background-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .hidden {
   display: none;
 }
 .required {
-  animation: invalid 5s ease-in-out;
+  animation: invalid 4s ease-in-out;
+  border: 1px solid transparent;
 }
 @keyframes invalid {
   0% {
     border: 1px solid red;
   }
   100% {
-    border: none;
+    border: 1px solid transparent;
   }
 }
 section {
@@ -38,16 +38,16 @@ section {
   align-items: center;
   height: 100vh;
   animation: appear 1s ease-in-out;
-  /*  transform: translateY(0) scaleY(1); */
+  transform: translateY(0) scaleY(1);
 }
-/* @keyframes appear {
+@keyframes appear {
   0% {
-    transform: translateY(-100%) ;
+    transform: translateY(-100%);
   }
   100% {
-    transform: translateY(0) ;
+    transform: translateY(0);
   }
-} */
+}
 .header-container {
   display: flex;
   justify-content: center;
@@ -61,14 +61,14 @@ section {
 }
 .click-fromRight {
   animation: from-right 0.7s ease-in-out;
-  transform: translateX(107px);
+  transform: translateX(115px);
 }
 @keyframes from-right {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(107px);
+    transform: translateX(115px);
   }
 }
 .click-fromLeft {
@@ -77,7 +77,7 @@ section {
 }
 @keyframes from-left {
   0% {
-    transform: translateX(107px);
+    transform: translateX(115px);
   }
   100% {
     transform: translateX(0);
@@ -86,14 +86,14 @@ section {
 #animation-box {
   position: absolute;
   height: 34px;
-  width: 110px;
+  width: 120px;
   border-radius: 5px;
   background-color: gray;
 }
 .header {
   font-family: lato;
   font-size: 20px;
-  width: 100px;
+  width: 110px;
   font-weight: 600px;
   padding: 5px 4px;
   text-transform: uppercase;
@@ -112,6 +112,9 @@ section {
 .container {
   padding: 20px 50px;
 }
+.form {
+  margin-top: 25px;
+}
 .input-container {
   padding: px;
   margin-top: 10px;
@@ -119,7 +122,7 @@ section {
 .input,
 .sign-up-input {
   padding: 10px 15px;
-  width: 200px;
+  width: 205px;
   border-radius: 7px;
   background-color: darkgrey;
 }
@@ -139,8 +142,8 @@ input:focus {
   margin-left: 10px;
 }
 a {
-  font-family: sans-serif;
-  color: rgb(255, 0, 0);
+  font-family: lato;
+  color:black;
 }
 .btn {
   padding: 10px 15px;
@@ -148,4 +151,5 @@ a {
   border: none;
   background-color: darkgrey;
   margin-top: 5px;
+  border-radius: 7px;
 }

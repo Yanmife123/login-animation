@@ -8,7 +8,7 @@
           document.getElementById("Username").remove &&
             document.getElementById("password").remove;
           input.classList.remove("required");
-        }, 2000);
+        }, 3000);
       }
     });
   }
