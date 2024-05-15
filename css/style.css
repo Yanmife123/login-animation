@@ -4,16 +4,16 @@
 }
 @font-face {
   font-family: jua;
-  src: url(font/Jua/Jua-Regular.ttf);
+  src: url(/animation1/font/Jua/Jua-Regular.ttf);
 }
 @font-face {
   font-family: lato;
-  src: url(font/Lato/Lato-Black.ttf);
+  src: url(/animation1/font/Lato/Lato-Black.ttf);
 }
 body {
   font-family: jua;
   font-size: 15px;
-  background-image: url(img/pexels-riciardus-789380.jpg);
+  background-image: url(/animation1/img/pexels-riciardus-789380.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
