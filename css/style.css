@@ -4,16 +4,16 @@
 }
 @font-face {
   font-family: jua;
-  src: url(/animation1/font/Jua/Jua-Regular.ttf);
+  src: url(Jua-Regular.ttf);
 }
 @font-face {
   font-family: lato;
-  src: url(/animation1/font/Lato/Lato-Black.ttf);
+  src: url(Lato-Black.ttf);
 }
 body {
   font-family: jua;
   font-size: 15px;
-  background-image: url(/animation1/img/background-image.jpg);
+  background-image: url(background-image.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
