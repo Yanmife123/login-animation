@@ -13,12 +13,25 @@
 body {
   font-family: jua;
   font-size: 15px;
-  background-image: url(background-image.jpg);
+  background-image: url(pexels-1585669-3077882.jpg);
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
 .hidden {
   display: none;
+}
+.sign-up {
+  animation: sign_up 0.5s ease-in-out;
+}
+@keyframes sign_up {
+  0% {
+    transform: translateX(-79px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 .required {
   animation: invalid 4s ease-in-out;
@@ -40,14 +53,14 @@ section {
   animation: appear 1s ease-in-out;
   transform: translateY(0) scaleY(1);
 }
-@keyframes appear {
+/* @keyframes appear {
   0% {
     transform: translateY(-100%);
   }
   100% {
     transform: translateY(0);
   }
-}
+} */
 .header-container {
   display: flex;
   justify-content: center;
@@ -60,7 +73,7 @@ section {
   border-radius: 5px;
 }
 .click-fromRight {
-  animation: from-right 0.7s ease-in-out;
+  animation: from-right 0.5s ease-in-out;
   transform: translateX(115px);
 }
 @keyframes from-right {
@@ -72,7 +85,7 @@ section {
   }
 }
 .click-fromLeft {
-  animation: from-left 0.7s ease-in-out;
+  animation: from-left 0.5s ease-in-out;
   transform: translateX(0);
 }
 @keyframes from-left {
@@ -116,15 +129,20 @@ section {
   margin-top: 25px;
 }
 .input-container {
-  padding: px;
   margin-top: 10px;
 }
-.input,
-.sign-up-input {
+.label {
+  font-family: lato;
+  margin-top: 2px;
+  font-size: 13px;
+  color: rgb(247, 52, 52);
+}
+.input {
   padding: 10px 15px;
   width: 205px;
   border-radius: 7px;
   background-color: darkgrey;
+  border: 1px solid transparent;
 }
 #Username,
 #password {
@@ -143,13 +161,22 @@ input:focus {
 }
 a {
   font-family: lato;
-  color:black;
+  color: black;
 }
 .btn {
-  padding: 10px 15px;
+  padding: 7px 0;
   width: 100%;
+  text-align: center;
   border: none;
   background-color: darkgrey;
   margin-top: 5px;
   border-radius: 7px;
+  font-size: 18px;
+  font-family: lato;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
